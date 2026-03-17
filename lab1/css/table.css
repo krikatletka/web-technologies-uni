@@ -1,0 +1,178 @@
+body{
+font-family: "Segoe UI", Arial, sans-serif;
+margin:0;
+padding:40px;
+line-height:1.6;
+color:#f0f0f0;
+}
+
+/* фон страницы */
+
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+filter: blur(6px);
+transform: scale(1.05);
+z-index:-2;
+}
+
+/* затемнение */
+
+body::after{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(20,22,28,0.55);
+z-index:-1;
+}
+
+/* картинки страниц */
+
+.schedule-page::before{
+background-image:url("../images/university.webp");
+}
+
+.cafe-page::before{
+background-image:url("../images/cafe.jpg");
+}
+
+.tournament-page::before{
+background-image:url("../images/football.jpg");
+}
+
+/* header */
+
+header{
+text-align:center;
+margin-bottom:35px;
+}
+
+h1{
+font-weight:600;
+color:#ffffff;
+}
+
+/* меню */
+
+.main-menu{
+display:flex;
+justify-content:center;
+gap:15px;
+margin-top:20px;
+margin-bottom:30px;
+}
+
+.main-menu a{
+text-decoration:none;
+color:#ffffff;
+background:rgba(255,255,255,0.15);
+padding:10px 18px;
+border-radius:8px;
+font-size:14px;
+transition:0.25s;
+}
+
+.main-menu a:hover{
+background:rgba(255,255,255,0.25);
+}
+
+/* таблица */
+
+table{
+width:100%;
+max-width:950px;
+margin:auto;
+border-collapse:separate;
+border-spacing:0;
+background:rgba(24, 26, 34, 0.88);
+color:#f1f1f1;
+border-radius:16px;
+overflow:hidden;
+box-shadow:0 12px 30px rgba(0,0,0,0.45);
+backdrop-filter:blur(8px);
+}
+
+/* caption */
+
+caption{
+caption-side:top;
+font-size:22px;
+font-weight:600;
+color:#ffffff;
+padding:0 0 14px 0;
+background:transparent;
+}
+
+/* ячейки */
+
+th,
+td{
+padding:15px 18px;
+text-align:center;
+border:none;
+}
+
+/* шапка */
+
+thead th{
+background:rgba(255,255,255,0.08);
+color:#ffffff;
+font-weight:600;
+border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+/* первая колонка */
+
+tbody th{
+background:rgba(255,255,255,0.05);
+color:#f5f5f5;
+font-weight:600;
+border-bottom:1px solid rgba(255,255,255,0.06);
+}
+
+/* обычные ячейки */
+
+tbody td{
+background:rgba(255,255,255,0.03);
+border-bottom:1px solid rgba(255,255,255,0.06);
+}
+
+/* чётные строки */
+
+tbody tr:nth-child(even) td{
+background:rgba(255,255,255,0.05);
+}
+
+/* hover */
+
+tbody tr:hover td,
+tbody tr:hover th{
+background:rgba(255,255,255,0.10);
+transition:0.2s;
+}
+
+/* убрать нижнюю границу у последней строки */
+
+tbody tr:last-child td,
+tbody tr:last-child th{
+border-bottom:none;
+}
+
+/* footer */
+
+footer{
+text-align:center;
+margin-top:40px;
+color:#dddddd;
+font-size:14px;
+}

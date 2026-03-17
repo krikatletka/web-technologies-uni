@@ -1,76 +1,169 @@
+ <!-- Крок 4.  -->
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Блог</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Блог</title>
 </head>
+
 <body>
-  <header>
-    <h1>Мій блог</h1>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Головна</a></li>
-        <li><a href="blog.html">Блог</a></li>
-        <li><a href="contact.html">Контакти</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <article>
-      <header>
-        <h2>Перша стаття</h2>
-        <p>Опубліковано: <time datetime="2026-02-20">20 лютого 2026</time></p>
-      </header>
+<header>
+<h1>Мій блог</h1>
 
-      <p>Це приклад першої статті на сторінці блогу.</p>
+<nav>
+<ul>
+<li><a href="../index.html">Головна</a></li>
+<li><a href="contact.html">Контакти</a></li>
+<li><a href="gallery.html">Галерея</a></li>
+<li><a href="documentation.html">Документи</a></li>
+</ul>
+</nav>
 
-      <section>
-        <h3>Підзаголовок</h3>
-        <p>У цьому розділі наведено додаткову інформацію до основного тексту статті.</p>
-      </section>
+</header>
 
-      <figure>
-        <img src="../images/gallery1.jpg" alt="Зображення до статті" width="300">
-        <figcaption>Рисунок 1 – Ілюстрація до першої статті</figcaption>
-      </figure>
+<main>
 
-      <footer>
-        <address>Автор: <a href="mailto:author@example.com">Іван Петренко</a></address>
-      </footer>
-    </article>
+<!-- Перша стаття -->
 
-    <section>
-  <h2>Додаткова інформація</h2>
+<article>
 
-  <details>
-    <summary>Детальніша інформація</summary>
-    <p>Ця інформація прихована і розкривається за бажанням користувача.</p>
-  </details>
+<header>
+<h2>🌍 Подорож у світ веб-розробки</h2>
 
-  <p>Для виведення тексту використовуйте <code>console.log()</code>.</p>
+<p>
+Опубліковано:
+<time datetime="2026-02-20">20 лютого 2026</time>
+</p>
 
-  <pre><code>function greet(name) {
-  return `Hello, ${name}!`;
-}</code></pre>
+</header>
 
-  <p><mark>Важливе зауваження</mark> щодо використання семантичної розмітки.</p>
+<p>
+Веб-розробка починається з простого HTML. Саме ця мова дозволяє створювати
+структуру веб-сторінок: заголовки, текст, зображення та посилання.
+Навіть найпростіший сайт починається з кількох рядків HTML-коду.
+</p>
+
+<section>
+
+<h3> Що можна створити за допомогою HTML?</h3>
+
+<ul>
+<li>структуровані веб-сторінки</li>
+<li>блоги та новини</li>
+<li>галереї зображень</li>
+<li>технічну документацію</li>
+</ul>
+
 </section>
-    <article>
-      <header>
-        <h2>Друга стаття</h2>
-        <p>Опубліковано: <time datetime="2026-02-15">15 лютого 2026</time></p>
-      </header>
-      <p>Це приклад другої статті на сторінці блогу.</p>
-    </article>
-  </main>
 
-  <footer>
-    <address>
-      <p>Контакти: email@example.com</p>
-    </address>
-    <p>&copy; 2026 Мій блог</p>
-  </footer>
+<figure>
+
+<img src="../images/blog2.png" alt="Приклад веб-сторінки" width="500">
+
+<figcaption>
+Рисунок 1 — Приклад ілюстрації до статті
+</figcaption>
+
+</figure>
+
+<footer>
+
+<address>
+Автор:
+<a href="mailto:aak@gmail.com">Крістінка</a>
+</address>
+
+</footer>
+
+</article>
+
+<hr>
+
+<!-- Друга стаття -->
+
+<article>
+
+<header>
+
+<h2>Чому семантична розмітка важлива</h2>
+
+<p>
+Опубліковано:
+<time datetime="2026-02-15">15 лютого 2026</time>
+</p>
+
+</header>
+
+<p>
+Семантична розмітка допомагає браузерам та пошуковим системам
+краще розуміти структуру веб-сторінки. Використання тегів
+<code>article</code>, <code>section</code>, <code>header</code> та
+<code>footer</code> робить код зрозумілим та впорядкованим.
+</p>
+
+<figure>
+
+<img src="../images/blog1.jpg" alt="Семантична структура HTML" width="500">
+
+<figcaption>
+ Рисунок 2 — Структура семантичної HTML-сторінки
+</figcaption>
+
+</figure>
+<section>
+
+  <!-- Крок 5.  -->
+<h3>Додаткова інформація</h3>
+
+<details>
+<summary>А тут секретікі</summary>
+<p> Не знаю що тут написати, ляляля, прихована інфа </p>
+</details>
+
+<p>
+Для виведення тексту використовуйте <code>console.log()</code>.
+</p>
+
+<pre><code>
+function greet(name) {
+  return `Hello, ${name}!`;
+}
+</code></pre>
+
+<p>
+<mark>Важливе зауваження</mark> щодо використання семантичної розмітки.
+</p>
+
+</section>
+
+
+
+
+<footer>
+
+<address>
+Автор:
+<a href="mailto:aak@gmail.com">Крістіна Можаєва</a>
+</address>
+
+</footer>
+
+</article>
+
+</main>
+
+<footer>
+
+<address>
+Контакти: kristinks@gmail.com
+</address>
+
+<p>© 2026 Мій блог</p>
+
+</footer>
+
 </body>
 </html>
