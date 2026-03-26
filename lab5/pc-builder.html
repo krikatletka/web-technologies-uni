@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конструктор комп’ютера</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-wrapper">
+
+        <nav class="top-nav">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="register.html">Реєстрація</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="pc-builder.html" class="active">Конструктор ПК</a></li>
+            </ul>
+        </nav>
+
+        <div class="form-container">
+            <img
+                class="form-image"
+                src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=1000&q=80"
+                alt="Комп’ютер"
+            >
+
+            <h2>Конструктор комп’ютера</h2>
+            <p class="subtitle">Оберіть комплектуючі для кастомного збирання ПК</p>
+
+            <form action="/pc-builder" method="POST">
+
+                <div class="form-group">
+                    <label for="cpu">Процесор:</label>
+                    <select id="cpu" name="cpu" required>
+                        <option value="">-- Оберіть процесор --</option>
+                        <option value="intel_i5">Intel Core i5</option>
+                        <option value="intel_i7">Intel Core i7</option>
+                        <option value="ryzen5">AMD Ryzen 5</option>
+                        <option value="ryzen7">AMD Ryzen 7</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="gpu">Відеокарта:</label>
+                    <select id="gpu" name="gpu" required>
+                        <option value="">-- Оберіть відеокарту --</option>
+                        <option value="rtx4060">NVIDIA GeForce RTX 4060</option>
+                        <option value="rtx4070">NVIDIA GeForce RTX 4070</option>
+                        <option value="rx7600">AMD Radeon RX 7600</option>
+                        <option value="rx7700">AMD Radeon RX 7700</option>
+                    </select>
+                </div>
+
+                <fieldset class="options-group">
+                    <legend>Додаткові аксесуари:</legend>
+
+                    <div class="checkbox-list">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="cooler" name="accessories" value="cooler">
+                            <label for="cooler">Додатковий кулер</label>
+                        </div>
+
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="rgb" name="accessories" value="rgb">
+                            <label for="rgb">RGB підсвітка</label>
+                        </div>
+
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="wifi" name="accessories" value="wifi">
+                            <label for="wifi">Wi-Fi адаптер</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="case-color">Базовий колір корпусу:</label>
+                    <input type="color" id="case-color" name="case-color" class="color-input" value="#2563eb">
+                </div>
+
+                <div class="button-group">
+                    <button type="submit">Зібрати ПК</button>
+                    <button type="reset" class="reset-btn">Очистити форму</button>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>

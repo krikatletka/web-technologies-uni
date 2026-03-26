@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #dbeafe, #fce7f3);
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.page-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.top-nav {
+    background-color: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    padding: 18px 24px;
+    margin-bottom: 25px;
+}
+
+.top-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: #1e3a8a;
+    font-weight: bold;
+    padding: 10px 16px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.top-nav a:hover,
+.top-nav a.active {
+    background-color: #2563eb;
+    color: white;
+}
+
+.form-container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    padding: 30px;
+}
+
+.form-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #6b7280;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #374151;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="tel"],
+input[type="color"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: 0.3s;
+    background-color: #f9fafb;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #3b82f6;
+    outline: none;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+textarea {
+    resize: vertical;
+}
+
+.gender-group,
+.options-group {
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 18px;
+    background-color: #f9fafb;
+}
+
+.gender-group legend,
+.options-group legend {
+    font-weight: bold;
+    color: #374151;
+    padding: 0 6px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.radio-group label {
+    display: inline;
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 22px;
+}
+
+.checkbox-group label {
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+.checkbox-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-item label {
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+.color-input {
+    height: 50px;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+.reset-btn {
+    background-color: #e11d48;
+}
+
+.reset-btn:hover {
+    background-color: #be123c;
+}
+
+.home-card {
+    background-color: #ffffff;
+    max-width: 650px;
+    margin: 0 auto;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    text-align: center;
+}
+
+.home-card p {
+    color: #4b5563;
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .form-container,
+    .home-card {
+        padding: 20px;
+    }
+
+    .top-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}

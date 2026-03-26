@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма зворотного зв’язку</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-wrapper">
+
+        <nav class="top-nav">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="register.html">Реєстрація</a></li>
+                <li><a href="feedback.html" class="active">Feedback</a></li>
+                <li><a href="pc-builder.html">Конструктор ПК</a></li>
+            </ul>
+        </nav>
+
+        <div class="form-container">
+            <img
+                class="form-image"
+                src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=80"
+                alt="Зворотний зв’язок"
+            >
+
+            <h2>Форма зворотного зв’язку</h2>
+            <p class="subtitle">Залиште своє звернення, і ми зв’яжемося з вами</p>
+
+            <form action="/feedback" method="POST">
+
+                <div class="form-group">
+                    <label for="fullname">ПІБ:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="topic">Тема звернення:</label>
+                    <select id="topic" name="topic" required>
+                        <option value="">-- Оберіть тему --</option>
+                        <option value="question">Питання</option>
+                        <option value="problem">Проблема</option>
+                        <option value="suggestion">Пропозиція</option>
+                        <option value="other">Інше</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Контактний номер телефону:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+380..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Текст повідомлення:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Напишіть ваше повідомлення..." required></textarea>
+                </div>
+
+                <div class="button-group">
+                    <button type="submit">Надіслати</button>
+                    <button type="reset" class="reset-btn">Очистити форму</button>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
