@@ -1,115 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dream House</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8">
+<title>Maison Collections</title>
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
+<!--  https://www.figma.com/design/CZDVTWfOGpnLxRpL7WGIU9/Maison-%E2%80%94-Luxury-Fashion-Landing-Page-UI--Community-?node-id=1-412&t=SZrPeFwaAA7x4x06-0   -->
 <body>
-  <main class="page">
-    <section class="card-layout">
-      <div class="left-side">
-        <h1 class="title">
-          We build your dream
-          <br />
-          house with our passion
-        </h1>
 
-        <p class="description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus
-          imperdiet sed id elementum. Quam vel aliquam sit vulputate.
-          Faucibus nec gravida ipsum pulvinar vel.
-        </p>
+<header class="navbar">
 
-        <a href="#" class="btn">Get started</a>
+<div class="logo">MAISON<span>.</span></div>
 
-        <div class="stats">
-          <article class="stat-box stat-box-blue">
-            <h2>178K+</h2>
-            <p>
-              Lorem ipsum dolor amet,
-              consectetur adipiscing elit.
-              Faucibus in libero.Lorem ipsum
-              dolor amet.
-            </p>
-          </article>
+<nav>
+<a href="#">Collections</a>
+<a href="#">About</a>
+<a href="#">Atelier</a>
+<a href="#">Contact</a>
+</nav>
 
-          <article class="stat-box stat-box-light">
-            <h2>362</h2>
-            <p>
-              Lorem ipsum dolor amet,
-              consectetur adipiscing elit.
-              Faucibus in libero.Lorem ipsum
-              dolor amet.
-            </p>
-          </article>
-        </div>
+</header>
 
-        <article class="bottom-card">
-          <div class="bottom-card-text">
-            <h3>Title</h3>
-            <p>
-              Lorem ipsum dolor amet, consectetur adipiscing elit. Faucibus in
-              libero.Lorem ipsum dolor amet, lorem ips dolor sit amet
-              consectetur adipiscing elit.
-            </p>
-          </div>
 
-          <img
-            src="img/house-small.jpg"
-            alt="Modern house preview"
-            class="bottom-card-image"
-          />
-        </article>
-      </div>
+<section class="hero">
 
-      <div class="right-side">
- <div class="badge">
+<img src="images/hero-dress.png" class="hero-img">
 
-<svg viewBox="0 0 200 200" class="badge-svg">
+<div class="hero-content">
 
-  <defs>
-    <!-- верхняя дуга -->
-    <path
-      id="topArc"
-      d="M 40 100 A 60 60 0 0 1 160 100"
-    />
+<p class="small">AUTUMN / WINTER COLLECTION 2025</p>
 
-    <!-- нижняя дуга -->
-    <path
-      id="bottomArc"
-      d="M 160 100 A 60 60 0 0 1 40 100"
-    />
-  </defs>
+<h1>
+Where Elegance <br>
+<span>Meets</span> Artistry
+</h1>
 
-  <text class="badge-text">
-    <textPath href="#topArc" startOffset="50%" text-anchor="middle">
-      CONSTRUCTION
-    </textPath>
-  </text>
+<p class="hero-text">
+Discover our curated collection of timeless pieces,
+crafted with precision and designed for
+the modern connoisseur.
+</p>
 
-  <text class="badge-text">
-    <textPath href="#bottomArc" startOffset="50%" text-anchor="middle">
-      • DOLOR SIT AMET •
-    </textPath>
-  </text>
-</svg>
-<span class="badge-heart">♥</span>
+<div class="hero-buttons">
+
+<button class="btn-primary">Explore Collection</button>
+<button class="btn-outline">Our Story</button>
+
 </div>
-        <img
-          src="img/house-main.png"
-          alt="Modern white house"
-          class="main-image"
-        />
-      </div>
-    </section>
-  </main>
+
+</div>
+
+</section>
+
+
+<section class="products">
+
+<h2>Signature Pieces</h2>
+
+<div class="product-grid">
+
+<div class="product">
+<img src="images/bag.png">
+<p class="category">ACCESSORIES</p>
+<h3>The Scarlet Tote</h3>
+<p class="price">$1450</p>
+</div>
+
+<div class="product">
+<img src="images/dress (2).png">
+<p class="category">EVENING WEAR</p>
+<h3>Crimson Silk Gown</h3>
+<p class="price">$3200</p>
+</div>
+
+<div class="product">
+<img src="images/heels.png">
+<p class="category">FOOTWEAR</p>
+<h3>Vermillion Stilettos</h3>
+<p class="price">$890</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="features">
+
+<h2>The Art of Exceptional Fashion</h2>
+
+<div class="features-grid">
+
+<div>
+<h3>Premium Materials</h3>
+<p>Only the finest silks, leathers, and fabrics.</p>
+</div>
+
+<div>
+<h3>Artisan Craftsmanship</h3>
+<p>Each piece handcrafted by master artisans.</p>
+</div>
+
+<div>
+<h3>Timeless Design</h3>
+<p>Our designs transcend seasons.</p>
+</div>
+
+<div>
+<h3>Exclusive Collections</h3>
+<p>Limited edition pieces ensuring individuality.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="atelier">
+
+<div class="atelier-text">
+
+<h2>Crafted with <span>Passion</span></h2>
+
+<p>
+Our atelier in Paris houses the most skilled artisans,
+each dedicated to the pursuit of perfection.
+</p>
+
+<button class="btn-outline">Discover Our Heritage</button>
+
+</div>
+
+<div class="stats">
+
+<div>
+<h3>25+</h3>
+<p>Years of Excellence</p>
+</div>
+
+<div>
+<h3>150</h3>
+<p>Master Artisans</p>
+</div>
+
+<div>
+<h3>40+</h3>
+<p>Countries Served</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="newsletter">
+
+<h2>Join Our Exclusive Circle</h2>
+
+<p>
+Be the first to discover new collections,
+private events, and exclusive offers.
+</p>
+
+<div class="subscribe">
+
+<input type="email" placeholder="Enter your email">
+<button class="btn-primary">Subscribe</button>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<div class="footer-grid">
+
+<div>
+<h3>MAISON.</h3>
+<p>Redefining luxury fashion since 1999.</p>
+</div>
+
+<div>
+<h4>Collections</h4>
+<p>New Arrivals</p>
+<p>Ready-to-Wear</p>
+<p>Evening Wear</p>
+<p>Accessories</p>
+<p>Footwear</p>
+</div>
+
+<div>
+<h4>About</h4>
+<p>Our Story</p>
+<p>Atelier</p>
+<p>Sustainability</p>
+<p>Careers</p>
+</div>
+
+<div>
+<h4>Contact</h4>
+<p>contact@maison.com</p>
+<p>+1 (888) 555-0123</p>
+<p>Paris, France</p>
+</div>
+
+</div>
+
+</footer>
+
+
 </body>
 </html>
