@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація на IT-конференцію</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Власний CSS -->
+    <link rel="stylesheet" href="styleX.css">
+</head>
+<body>
+
+    <div class="container py-5">
+        <div class="row g-4">
+            
+            <!-- Ліва частина: форма -->
+            <div class="col-12 col-md-7">
+                <div class="form-section p-4 shadow rounded bg-white">
+                    <h2 class="mb-4 text-center">Реєстрація на IT-конференцію</h2>
+
+                    <form>
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">ПІБ</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Введіть ваше ім'я">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Електронна пошта</label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="company" class="form-label">Компанія / Навчальний заклад</label>
+                            <input type="text" class="form-control" id="company" placeholder="Назва компанії або університету">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="ticketType" class="form-label">Тип квитка</label>
+                            <select class="form-control" id="ticketType">
+                                <option selected disabled>Оберіть тип квитка</option>
+                                <option>Стандарт</option>
+                                <option>VIP</option>
+                                <option>Студентський</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="direction" class="form-label">Напрямок</label>
+                            <select class="form-control" id="direction">
+                                <option selected disabled>Оберіть напрямок</option>
+                                <option>Frontend</option>
+                                <option>Backend</option>
+                                <option>UI/UX Design</option>
+                                <option>Cybersecurity</option>
+                                <option>Data Science</option>
+                            </select>
+                        </div>
+
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="agreement">
+                            <label class="form-check-label" for="agreement">
+                                Я погоджуюся на обробку персональних даних
+                            </label>
+                        </div>
+
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" id="newsletter">
+                            <label class="form-check-label" for="newsletter">
+                                Хочу отримувати новини про наступні заходи
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100">Зареєструватися</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Права частина: контакти і розклад -->
+            <div class="col-12 col-md-5">
+                <div class="info-section p-4 shadow rounded bg-light h-100">
+                    <h3 class="mb-3">Контактна інформація</h3>
+                    <p><strong>Місце:</strong> Київ, Conference Hall</p>
+                    <p><strong>Телефон:</strong> +380 67 123 45 67</p>
+                    <p><strong>Email:</strong> info@itconf.ua</p>
+
+                    <hr>
+
+                    <h3 class="mb-3">Розклад</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <strong>09:00</strong> — Реєстрація учасників
+                        </li>
+                        <li class="list-group-item">
+                            <strong>10:00</strong> — Відкриття конференції
+                        </li>
+                        <li class="list-group-item">
+                            <strong>11:30</strong> — Панельна дискусія
+                        </li>
+                        <li class="list-group-item">
+                            <strong>13:00</strong> — Обідня перерва
+                        </li>
+                        <li class="list-group-item">
+                            <strong>14:00</strong> — Практичні воркшопи
+                        </li>
+                        <li class="list-group-item">
+                            <strong>17:00</strong> — Завершення заходу
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
