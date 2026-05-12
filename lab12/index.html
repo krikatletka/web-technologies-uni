@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Крок 1 -->
+    <div class="todo-app">
+        <h1>Мій список справ</h1>
+
+        <form id="todo-form">
+            <input 
+                type="text" 
+                id="task-input" 
+                placeholder="Що потрібно зробити?" 
+                required
+            >
+            <button type="submit">Додати</button>
+        </form>
+
+        <ul id="task-list"></ul>
+    </div>
+    <!-- Додаткове завдання 3. Додаток для нотаток -->
+    <div class="notes-app">
+        <h1>Мої нотатки</h1>
+
+        <form id="note-form">
+            <textarea 
+                id="note-input" 
+                placeholder="Введіть текст нотатки..." 
+                required
+            ></textarea>
+            <button type="submit">Додати нотатку</button>
+        </form>
+
+        <div id="notes-list"></div>
+    </div>
+    <!-- Додаткове завдання 9. Слайдер зображень -->
+    <div class="slider-app">
+        <h1>Слайдер зображень</h1>
+
+        <div class="slider">
+            <img src="https://picsum.photos/id/1015/600/300" class="slide active" alt="Зображення 1">
+            <img src="https://picsum.photos/id/1016/600/300" class="slide" alt="Зображення 2">
+            <img src="https://picsum.photos/id/1018/600/300" class="slide" alt="Зображення 3">
+
+            <div class="slider-buttons">
+                <button id="prev-btn">Назад</button>
+                <button id="next-btn">Вперед</button>
+            </div>
+        </div>
+    </div>
+    <!-- Додаткове завдання 12. Таймер Pomodoro -->
+    <div class="pomodoro-app">
+        <h1>Таймер Pomodoro</h1>
+
+        <div id="timer-display">25:00</div>
+
+        <div class="timer-buttons">
+            <button id="start-timer">Старт</button>
+            <button id="pause-timer">Пауза</button>
+            <button id="reset-timer">Скидання</button>
+        </div>
+
+        <p id="timer-message"></p>
+    </div>
+    
+    <script src="app1.js"></script>
+</body>
+</html>

@@ -137,7 +137,8 @@ console.log(toCamelCase("hello-world"));
 console.log(toCamelCase("java script_language"));
 console.log(toCamelCase("MY_TEXT-EXAMPLE"));   
 
-// Завдання 12
+// Завдання 12 шифр Цезаря
+//коли кожну літеру ми зсуваємо на певну кількість позицій в алфавіті
 const caesarCipher = (str, shift, decrypt = false) => {
   const alphabetLength = 26;
   let result = "";
