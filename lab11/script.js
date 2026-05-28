@@ -69,7 +69,7 @@ for (const user of users) {
   const greeting = greetUser(user.name);
   const avgGrade = getAverage(user.grades);
   const status = getStatus(avgGrade);
-  const favColors = user.colors.join(", ");
+  const favColors = user.colors.join(", "); //це метод, який об’єднує елементи масиву в один рядок через кому і пробіл.
   const studentInfo = user.isStudent ? "Діючий студент" : "Випускник/Гість";
 
   console.log(greeting);

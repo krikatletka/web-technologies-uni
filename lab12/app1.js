@@ -73,7 +73,7 @@ taskList.addEventListener('click', function (e) {
 renderTasks();
 
 // =========================
-// ДОДАТКОВЕ ЗАВДАННЯ 3. НОТАТКИ
+// ДОДАТКОВЕ ЗАВДАННЯ 3. НОТАТКИ   1
 // =========================
 
 const noteForm = document.querySelector('#note-form');
