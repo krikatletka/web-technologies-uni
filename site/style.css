@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #f7f2ec;
+    --card: #fffaf5;
+    --text: #2d2621;
+    --muted: #776b61;
+    --line: #eadfd4;
+    --accent: #b56a44;
+    --accent-dark: #8f4d2d;
+    --done: #52795f;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    background:
+        radial-gradient(circle at top left, #ffe2cf 0, transparent 28rem),
+        linear-gradient(135deg, #f7f2ec, #f2ebe4);
+}
+
+.app {
+    width: min(1120px, calc(100% - 32px));
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 24px;
+    align-items: stretch;
+}
+
+.eyebrow {
+    margin: 0 0 12px;
+    color: var(--accent);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 12px;
+}
+
+h1 {
+    margin: 0;
+    font-size: clamp(42px, 7vw, 82px);
+    line-height: 0.95;
+    max-width: 720px;
+}
+
+.hero-text {
+    max-width: 560px;
+    color: var(--muted);
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.trip-card,
+.add-card,
+.category-card,
+.summary article {
+    background: rgba(255, 250, 245, 0.86);
+    border: 1px solid var(--line);
+    border-radius: 26px;
+    box-shadow: 0 20px 50px rgba(95, 65, 45, 0.08);
+}
+
+.trip-card {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 700;
+}
+
+input,
+select,
+button {
+    width: 100%;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 13px 14px;
+    font-size: 15px;
+    background: white;
+    color: var(--text);
+}
+
+.trip-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+button {
+    cursor: pointer;
+    font-weight: 700;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+}
+
+.primary-button,
+.add-form button {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+}
+
+.primary-button:hover,
+.add-form button:hover {
+    background: var(--accent-dark);
+}
+
+.summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 28px 0;
+}
+
+.summary article {
+    padding: 22px;
+}
+
+.summary span {
+    display: block;
+    font-size: 34px;
+    font-weight: 800;
+}
+
+.summary p {
+    margin: 6px 0 0;
+    color: var(--muted);
+}
+
+.controls {
+    margin-bottom: 24px;
+}
+
+.add-card {
+    padding: 22px;
+}
+
+.add-card h2 {
+    margin: 0 0 16px;
+}
+
+.add-form {
+    display: grid;
+    grid-template-columns: 1fr 180px 130px;
+    gap: 12px;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.category-card {
+    padding: 22px;
+}
+
+.category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.category-header h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.badge {
+    color: var(--muted);
+    background: #f2e7dd;
+    border-radius: 999px;
+    padding: 6px 10px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+    border-top: 1px solid var(--line);
+}
+
+.item input {
+    width: auto;
+    accent-color: var(--done);
+}
+
+.item span {
+    flex: 1;
+}
+
+.item.done span {
+    color: var(--muted);
+    text-decoration: line-through;
+}
+
+.delete-btn {
+    width: auto;
+    padding: 7px 10px;
+    background: transparent;
+    color: var(--muted);
+}
+
+.empty {
+    color: var(--muted);
+    font-style: italic;
+    border-top: 1px solid var(--line);
+    padding-top: 14px;
+}
+
+@media (max-width: 760px) {
+    .hero,
+    .summary,
+    .categories,
+    .add-form {
+        grid-template-columns: 1fr;
+    }
+
+    .app {
+        width: min(100% - 20px, 1120px);
+        padding: 24px 0;
+    }
+}

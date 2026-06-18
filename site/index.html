@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Suitcase Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app">
+        <section class="hero">
+            <div>
+                <p class="eyebrow">Travel packing assistant</p>
+                <h1>Build your perfect suitcase</h1>
+                <p class="hero-text">
+                    Plan outfits, documents, cosmetics, tech, medicine and all small essentials
+                    in one clean checklist.
+                </p>
+            </div>
+
+            <div class="trip-card">
+                <label for="tripName">Trip name</label>
+                <input id="tripName" type="text" placeholder="Nice, Paris, Amsterdam...">
+
+                <div class="trip-grid">
+                    <div>
+                        <label for="days">Days</label>
+                        <input id="days" type="number" min="1" value="4">
+                    </div>
+
+                    <div>
+                        <label for="weather">Weather</label>
+                        <select id="weather">
+                            <option value="warm">Warm</option>
+                            <option value="mixed">Mixed</option>
+                            <option value="cold">Cold</option>
+                            <option value="rainy">Rainy</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button id="generateBtn" class="primary-button">Generate packing list</button>
+            </div>
+        </section>
+
+        <section class="summary">
+            <article>
+                <span id="packedCount">0</span>
+                <p>Packed items</p>
+            </article>
+
+            <article>
+                <span id="totalCount">0</span>
+                <p>Total items</p>
+            </article>
+
+            <article>
+                <span id="progressPercent">0%</span>
+                <p>Suitcase ready</p>
+            </article>
+        </section>
+
+        <section class="controls">
+            <div class="add-card">
+                <h2>Add your own item</h2>
+                <div class="add-form">
+                    <input id="newItemInput" type="text" placeholder="For example: sunglasses">
+                    <select id="categorySelect">
+                        <option value="clothes">Clothes</option>
+                        <option value="cosmetics">Cosmetics</option>
+                        <option value="documents">Documents</option>
+                        <option value="tech">Tech</option>
+                        <option value="medicine">Medicine</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <button id="addItemBtn">Add</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="categories" class="categories"></section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
